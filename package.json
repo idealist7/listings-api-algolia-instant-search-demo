@@ -1,20 +1,18 @@
 {
-  "name": "instantsearch-app",
-  "version": "1.0.0",
+  "name": "listings-api-algolia-instant-search-demo",
   "private": true,
+  "version": "0.0.0",
+  "type": "module",
   "scripts": {
-    "start": "parcel index.html --port 3000",
-    "build": "parcel build index.html",
-    "lint": "eslint . && prettier --check .",
-    "lint:fix": "eslint . --fix && prettier --write ."
-  },
-  "devDependencies": {
-    "eslint": "8.15.0",
-    "parcel": "2.0.1",
-    "prettier": "2.6.2"
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
   },
   "dependencies": {
     "algoliasearch": "4",
     "instantsearch.js": "4.78.3"
+  },
+  "devDependencies": {
+    "vite": "^6.3.5"
   }
 }

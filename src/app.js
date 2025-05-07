@@ -1,12 +1,12 @@
 const { algoliasearch, instantsearch } = window;
 
 const searchClient = algoliasearch(
-  process.env.ALGOLIA_APP_ID,
-  process.env.ALGOLIA_SEARCH_API_KEY
+  import.meta.env.VITE_ALGOLIA_APP_ID,
+  import.meta.env.VITE_ALGOLIA_SEARCH_API_KEY
 );
 
 const search = instantsearch({
-  indexName: 'listings-api-importer-test',
+  indexName: import.meta.env.VITE_ALGOLIA_INDEX_NAME,
   searchClient,
   future: { preserveSharedStateOnUnmount: true },
 });
